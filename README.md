@@ -1,2 +1,2 @@
 # PStarter
-this is Peter
+This is Peter Mugano the Developer in making.
