@@ -1,0 +1,31 @@
+
+:root{
+    --val: 20;
+}
+svg{
+    position: relative;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+svg #cc1{
+    stroke-dasharray: 50;
+    fill: transparent;
+
+ }
+ svg text{
+     color: whitesmoke;
+     stroke: turquoise;
+     
+ }
+
+ #imgInner{
+     position: absolute;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     margin: auto;
+ }
