@@ -1,7 +1,23 @@
 <div class="container">
-	<div class="jumbotron">
-		<h1>Welcome</h1>
-		<h2>Dash</h2>
+	<div class="row jumbotron">
+		<div class="col-sm-6"> 
+			<h1>Welcome</h1>
+			<h2>Dash</h2>
+		</div>
+		<div class="col-sm-6">
+			<form [formGroup] = "miForm" (ngSubmit)="useData()">
+				<div class="formGroup">
+					<label for="dataValue"> Data:</label>
+					<input formControlName = "data" class= "formControl" type="text" id="dataValue">
+				</div>
+
+				<div class="formGroup">
+						<label for="dTxt"> label:</label>
+						<input formControlName ="txt" class= "formControl" type="text" id="dTxt">
+					</div>
+				<button class="btn btn-primary" type="ubmit">Send Data</button>
+			</form>
+		</div>
 	</div>
 	
 	<div class="row">
@@ -27,7 +43,7 @@
 	<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 	<div class="row">
 		<div class="jumbotron">
-			<gauge></gauge>
+			<gauge [cLabels] = 'cLabel'></gauge>
 		</div>
 	</div>
 
